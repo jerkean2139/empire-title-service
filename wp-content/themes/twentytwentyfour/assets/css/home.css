@@ -1,0 +1,88 @@
+/* Adding to your existing home.css */
+
+.hero-section {
+    position: relative;
+    background-color: var(--dark-color);
+    background-image: url('../images/hero-pattern.svg');
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        rgb(175, 35, 43, 0.1) 0%,
+        rgba(20, 20, 20, 0.2) 100%
+    );
+    pointer-events: none;
+}
+
+.hero-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(175, 35, 43, 0.2) 0%,
+        rgba(20, 20, 20, 0.1) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-image:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(175, 35, 43, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.service-icon svg {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color);
+}
+
+.feature-image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.feature-image:hover img {
+    transform: scale(1.05);
+}

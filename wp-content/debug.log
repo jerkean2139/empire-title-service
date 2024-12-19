@@ -1,0 +1,63 @@
+[19-Dec-2024 02:20:00 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\xampp\htdocs\empire-title-website\wp-includes\class-wpdb.php on line 1982
+[19-Dec-2024 02:22:57 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\xampp\htdocs\empire-title-website\wp-includes\class-wpdb.php on line 1982
+[19-Dec-2024 02:32:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function non_existent_function() in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php:5
+Stack trace:
+#0 C:\xampp\htdocs\empire-title-website\wp-settings.php(672): include()
+#1 C:\xampp\htdocs\empire-title-website\wp-config.php(45): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empire-title-website\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\empire-title-website\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\empire-title-website\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php on line 5
+[19-Dec-2024 02:32:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function non_existent_function() in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php:5
+Stack trace:
+#0 C:\xampp\htdocs\empire-title-website\wp-settings.php(672): include()
+#1 C:\xampp\htdocs\empire-title-website\wp-config.php(45): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empire-title-website\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\empire-title-website\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\empire-title-website\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php on line 5
+[19-Dec-2024 02:32:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function non_existent_function() in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php:5
+Stack trace:
+#0 C:\xampp\htdocs\empire-title-website\wp-settings.php(672): include()
+#1 C:\xampp\htdocs\empire-title-website\wp-config.php(45): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empire-title-website\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\empire-title-website\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php on line 5
+[19-Dec-2024 02:32:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\empire-title-website\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[19-Dec-2024 02:32:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\empire-title-website\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[19-Dec-2024 02:33:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function non_existent_function() in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php:5
+Stack trace:
+#0 C:\xampp\htdocs\empire-title-website\wp-settings.php(672): include()
+#1 C:\xampp\htdocs\empire-title-website\wp-config.php(49): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\empire-title-website\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\empire-title-website\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour-child\functions.php on line 5
+[19-Dec-2024 03:22:41 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour\functions.php on line 14
+[19-Dec-2024 03:23:41 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour\functions.php on line 14
+[19-Dec-2024 03:24:43 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour\functions.php on line 14
+[19-Dec-2024 03:26:43 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour\functions.php on line 14
+[19-Dec-2024 03:28:44 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\empire-title-website\wp-content\themes\twentytwentyfour\functions.php on line 14
+[19-Dec-2024 03:32:48 UTC] Automatic updates starting...
+[19-Dec-2024 03:32:50 UTC]   Automatic theme updates starting...
+[19-Dec-2024 03:32:50 UTC]   Automatic theme updates complete.
+[19-Dec-2024 03:32:50 UTC] Automatic updates complete.
+[19-Dec-2024 04:21:57 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:21:57 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:29:16 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:29:16 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:29:22 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:29:22 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:31:11 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:31:11 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:38:52 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:38:52 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 04:55:18 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 05:02:19 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 05:15:24 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 05:23:44 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 05:32:28 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
+[19-Dec-2024 05:32:47 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\xampp\htdocs\empire-title-website\wp-includes\functions.php on line 6114
