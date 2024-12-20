@@ -1,0 +1,98 @@
+/* Root Variables */
+:root {
+    --color-primary: #AF232B;
+    --color-dark: #141414;
+    --color-neutral: #F9F9F9;
+    --color-text: #333333;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-neutral);
+    color: var(--color-text);
+}
+
+/* Links */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--color-dark);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero .buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .buttons a:hover {
+    background-color: #891A23;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.services .service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@layer components {
+    .calculator-container {
+      @apply p-4 bg-white rounded-lg shadow-md;
+    }
+  
+    #seller-net-sheet-form label {
+      @apply block mb-2 font-medium text-gray-700;
+    }
+  
+    #seller-net-sheet-form input {
+      @apply w-full p-2 mb-4 border rounded-md;
+    }
+  
+    #seller-net-sheet-form button {
+      @apply px-4 py-2 bg-primary text-white font-bold rounded hover:bg-primary-dark;
+    }
+  
+    #calculator-output {
+      @apply mt-4 p-4 bg-neutral rounded-lg shadow-inner;
+    }
+  }
+  

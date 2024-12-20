@@ -1,0 +1,335 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.calculator-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.calculator-inputs, .calculator-output {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(175, 35, 43);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup Modal Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important; /* Ensure complete hiding */
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#upload-fields label {
+    margin-top: 10px;
+}
+
+#upload-fields input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+/* Hide Modal During Print */
+@media print {
+    #popup-modal {
+        display: none !important;
+    }
+}
+#calculate-btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  #calculate-btn:hover {
+    background-color: #8e1c23;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+/* Popup Modal Background (Full Screen) */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Solid black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup-content {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    animation: popupFadeIn 0.5s ease-in-out;
+}
+
+@keyframes popupFadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Form Elements */
+.popup-content h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(175, 35, 43);
+}
+
+.popup-content label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content input[type="file"],
+.popup-content input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: rgb(175, 35, 43);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-content button:hover {
+    background-color: rgb(145, 30, 38);
+}
+
+/* Cancel Button Styling */
+#close-popup {
+    margin-top: 10px;
+    background-color: #555;
+    color: white;
+    font-size: 0.9em;
+}
+
+#close-popup:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Center Calculate Button and Add Padding */
+#calculate-btn {
+    display: block;
+    margin: 25px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(175, 35, 43);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calculate-btn:hover {
+    background-color: rgb(145, 30, 38);
+}
+/* Popup Modal Centering */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9); /* Solid black background */
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    animation: popupFadeIn 0.5s ease-in-out;
+}
+
+@keyframes popupFadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Buttons and Link Styling */
+.popup-content button {
+    padding: 12px 25px;
+    margin: 20px 0;
+    background-color: rgb(175, 35, 43);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-content button:hover {
+    background-color: rgb(145, 30, 38);
+}
+
+#close-popup {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    color: #333;
+}
+
+/* Step Form Styling */
+.step-hidden {
+    display: none;
+}
+
+.step-visible {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

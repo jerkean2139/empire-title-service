@@ -1,8 +1,0 @@
-/* Debug styles - Remove in production */
-.gsap-marker-scroller-start,
-.gsap-marker-scroller-end,
-.gsap-marker-start,
-.gsap-marker-end {
-    color: white !important;
-    font-family: monospace;
-}
