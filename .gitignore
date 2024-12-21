@@ -1,5 +1,12 @@
-/wp-content/uploads
-/wp-content/cache
-wp-config.php
-.env
-node_modules
+# WordPress specific ignores
+wp-content/debug.log
+wp-content/upgrade/
+*.log
+.htaccess
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Development files
+node_modules/
