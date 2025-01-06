@@ -1,0 +1,157 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Calendar Styles */
+.rbc-calendar {
+  background-color: #282828;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.rbc-toolbar {
+  margin-bottom: 20px;
+}
+
+.rbc-toolbar button {
+  color: #fff;
+  background-color: #1DB954;
+  border: none;
+  border-radius: 500px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #1ed760;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #1ed760;
+  box-shadow: none;
+}
+
+.rbc-header {
+  padding: 8px;
+  font-weight: 600;
+  background-color: #323232;
+}
+
+.rbc-event {
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.event-meeting {
+  background-color: #2196f3 !important;
+}
+
+.event-deadline {
+  background-color: #f44336 !important;
+}
+
+.event-reminder {
+  background-color: #4caf50 !important;
+}
+
+.rbc-today {
+  background-color: rgba(29, 185, 84, 0.1);
+}
+
+.rbc-off-range-bg {
+  background-color: #323232;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  border-left: 1px solid #404040;
+}
+
+.rbc-month-row + .rbc-month-row {
+  border-top: 1px solid #404040;
+}
+
+.rbc-time-content {
+  border-top: 2px solid #404040;
+}
+
+.rbc-time-header-content {
+  border-left: 1px solid #404040;
+}
+
+.rbc-time-content > * + * > * {
+  border-left: 1px solid #404040;
+}
+
+.rbc-time-slot {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.rbc-current-time-indicator {
+  background-color: #1DB954;
+  height: 2px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
