@@ -1,0 +1,86 @@
+.calculator-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.calculator-wrapper h3 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.calculate-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.calculate-btn:hover {
+    background: #0056b3;
+}
+
+.result-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 4px;
+    display: none;
+}
+
+.result-section:not(:empty) {
+    display: block;
+}
+
+.result-section h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.result-section p {
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-section .net-proceeds,
+.result-section .max-price,
+.result-section .total-fees {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.1em;
+    border-bottom: none;
+}

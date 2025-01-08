@@ -1,0 +1,252 @@
+:root {
+    --empire-dark: #1a1f3d;
+    --empire-primary: #2c3494;
+    --empire-secondary: #676ab1;
+    --empire-light: #f0f1ff;
+    --empire-accent: #ff9900;
+    --empire-gradient: linear-gradient(135deg, var(--empire-dark) 0%, var(--empire-primary) 100%);
+    --card-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+    --depth-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 
+                    0 2px 2px rgba(0, 0, 0, 0.12), 
+                    0 4px 4px rgba(0, 0, 0, 0.12), 
+                    0 8px 8px rgba(0, 0, 0, 0.12),
+                    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--empire-dark);
+    background: linear-gradient(135deg, #f6f7ff 0%, #eef0ff 100%);
+    min-height: 100vh;
+}
+
+.navbar {
+    background: var(--empire-dark);
+    padding: 1.5rem 0;
+    box-shadow: var(--depth-shadow);
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: var(--empire-accent);
+}
+
+.main-title {
+    color: var(--empire-dark);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: var(--empire-accent);
+    border-radius: 2px;
+}
+
+.calculator-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    cursor: pointer;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.calculator-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    z-index: 1;
+}
+
+.calculator-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--depth-shadow);
+}
+
+.calculator-card .icon-wrapper {
+    width: 100px;
+    height: 100px;
+    background: var(--empire-gradient);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    position: relative;
+    box-shadow: var(--card-shadow);
+}
+
+.calculator-card .icon-wrapper i {
+    color: white;
+    font-size: 2.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.calculator-card h3 {
+    color: var(--empire-primary);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.calculator-card p {
+    color: var(--empire-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.calculator-card .hover-arrow {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    color: var(--empire-accent);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+    z-index: 2;
+}
+
+.calculator-card:hover .hover-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--empire-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-control {
+    border: 2px solid var(--empire-light);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-control:focus {
+    border-color: var(--empire-primary);
+    box-shadow: 0 0 0 3px rgba(44, 52, 148, 0.1);
+}
+
+.btn-primary {
+    background: var(--empire-gradient);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--depth-shadow);
+}
+
+.results-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    box-shadow: var(--depth-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.results-table {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.results-table th {
+    background: var(--empire-gradient);
+    color: white;
+    padding: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+}
+
+.results-table td {
+    background: var(--empire-light);
+    padding: 1rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.results-table tr:hover td {
+    background: #e8e9ff;
+}
+
+.currency-input {
+    position: relative;
+}
+
+.currency-input::before {
+    content: "$";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--empire-secondary);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.currency-input input {
+    padding-left: 2.5rem;
+}
+
+/* Add Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
